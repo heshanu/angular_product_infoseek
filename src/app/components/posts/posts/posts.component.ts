@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { Product } from 'src/app/shared/interfaces/product';
 
@@ -8,7 +8,7 @@ import { Product } from 'src/app/shared/interfaces/product';
   styleUrls: ['./posts.component.css'],
 })
 export class PostsComponent implements OnInit {
-  postList: any[] = [];
+ @Input() postList: any[] = [];
 
   constructor(private productService: ProductService) {}
 

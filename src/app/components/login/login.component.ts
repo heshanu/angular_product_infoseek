@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     // console.log(`Username : ${this.userName}`);
-    if (this.userName == 'prabath' && this.password == '1234') {
+    if (this.userName == 'heshan' && this.password == '1234') {
       // alert('Login sucessfully!');
       localStorage.setItem('userId', '1');
       localStorage.setItem('userName', this.userName);

@@ -1,3 +1,5 @@
+;
+import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,7 +14,7 @@ import { ChildComponent } from './components/lifecycle/child/child.component';
 import { CurrencyInputDirective } from './shared/directives/currency-input.directive';
 import { HttpClientModule } from '@angular/common/http';
 import { PostsComponent } from './components/posts/posts/posts.component';
-import { PostsnewComponent } from './components/postsnew/postsnew.component';
+//import { PostsnewComponent } from './components/postsnew/postsnew.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 import { PostDetailComponent } from './components/post-detail/post-detail.component';
@@ -52,11 +54,6 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   {
-    path: 'details',
-    component: PostsnewComponent,
-    canActivate: [AuthGuard],
-  },
-  {
     path: 'details/:id',
     component: PostDetailComponent,
   },
@@ -70,27 +67,22 @@ const routes: Routes = [
     component: LoginComponent,
   },
   {
-    path: '**',
-    component: ChildComponent,
-    // redirectTo: 'product-list',
-    // pathMatch: 'full',
-  },
+    path: 'pipeEx',
+    component: PipeExsamplesComponent,
+  }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    ProductListComponent,
     FeaturedListComponent,
-    ProductComponent,
-    ParentComponent,
-    ChildComponent,
-    CurrencyInputDirective,
-    PostsComponent,
-    PostsnewComponent,
-    PostDetailComponent,
+    HeaderComponent,
     LoginComponent,
+    PipeExsamplesComponent,
+    PostDetailComponent,
+    PostsComponent,
+    ProductListComponent
+
   ],
   imports: [
     BrowserModule,
@@ -102,4 +94,4 @@ const routes: Routes = [
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
