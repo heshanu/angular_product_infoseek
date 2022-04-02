@@ -68,6 +68,9 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },{
+    path:'pipes-Exsample',
+    component:PipesExsampleComponent
   }
 ];
 
