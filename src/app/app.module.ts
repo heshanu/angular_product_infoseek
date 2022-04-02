@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 //import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
+=======
+import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
+>>>>>>> develop
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -65,7 +69,15 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+<<<<<<< HEAD
   }
+=======
+  },
+  {
+    path: 'pipeEx',
+    component: PipeExsamplesComponent,
+  },
+>>>>>>> develop
 ];
 
 @NgModule({
@@ -76,8 +88,7 @@ const routes: Routes = [
     LoginComponent,
     PostDetailComponent,
     PostsComponent,
-    ProductListComponent
-
+    ProductListComponent,
   ],
   imports: [
     BrowserModule,
@@ -89,4 +100,4 @@ const routes: Routes = [
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
