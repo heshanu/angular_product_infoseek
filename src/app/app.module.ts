@@ -1,5 +1,5 @@
-;
-import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
+
+//import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -65,10 +65,6 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
-  },
-  {
-    path: 'pipeEx',
-    component: PipeExsamplesComponent,
   }
 ];
 
@@ -78,7 +74,6 @@ const routes: Routes = [
     FeaturedListComponent,
     HeaderComponent,
     LoginComponent,
-    PipeExsamplesComponent,
     PostDetailComponent,
     PostsComponent,
     ProductListComponent
