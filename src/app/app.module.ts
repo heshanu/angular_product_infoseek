@@ -21,6 +21,7 @@ import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 
 import { DeactivateGuard } from './shared/guards/deactivate.guard';
+import { TimePipe } from './shared/pipes/time.pipe';
 
 const routes: Routes = [
   // {
@@ -89,7 +90,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     NgbPaginationModule,
   ],
-  providers: [],
+  providers: [TimePipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
