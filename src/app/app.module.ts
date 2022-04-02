@@ -23,7 +23,8 @@ import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 
 import { DeactivateGuard } from './shared/guards/deactivate.guard';
-import { TimePipe } from './shared/pipes/time.pipe';
+//import { TimePipe } from './shared/pipes/time.pipe';
+import { M2cmPipe } from './shared/pipes/m2cm.pipe';
 
 
 const routes: Routes = [
@@ -86,6 +87,7 @@ const routes: Routes = [
     PostsComponent,
     ProductListComponent,
    Hrs24Pipe,
+   M2cmPipe,
   ],
   imports: [
     BrowserModule,
