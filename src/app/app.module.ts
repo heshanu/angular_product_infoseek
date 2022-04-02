@@ -1,4 +1,3 @@
-;
 import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -69,7 +68,7 @@ const routes: Routes = [
   {
     path: 'pipeEx',
     component: PipeExsamplesComponent,
-  }
+  },
 ];
 
 @NgModule({
@@ -81,8 +80,7 @@ const routes: Routes = [
     PipeExsamplesComponent,
     PostDetailComponent,
     PostsComponent,
-    ProductListComponent
-
+    ProductListComponent,
   ],
   imports: [
     BrowserModule,
@@ -94,4 +92,4 @@ const routes: Routes = [
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
