@@ -1,3 +1,5 @@
+;
+import { Hrs24Pipe } from './shared/pipes/hrs24.pipe';
 import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -22,6 +24,7 @@ import { AuthGuard } from './shared/guards/auth.guard';
 
 import { DeactivateGuard } from './shared/guards/deactivate.guard';
 import { TimePipe } from './shared/pipes/time.pipe';
+
 
 const routes: Routes = [
   // {
@@ -82,15 +85,16 @@ const routes: Routes = [
     PostDetailComponent,
     PostsComponent,
     ProductListComponent,
+   Hrs24Pipe,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    NgbPaginationModule,
+    NgbPaginationModule
   ],
-  providers: [TimePipe],
+  providers: [Hrs24Pipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
