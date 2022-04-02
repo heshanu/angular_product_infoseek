@@ -25,6 +25,7 @@ import { AuthGuard } from './shared/guards/auth.guard';
 import { DeactivateGuard } from './shared/guards/deactivate.guard';
 //import { TimePipe } from './shared/pipes/time.pipe';
 import { M2cmPipe } from './shared/pipes/m2cm.pipe';
+import { Dollar2lkrsPipe } from './shared/pipes/dollar2lkrs.pipe';
 
 
 const routes: Routes = [
@@ -88,6 +89,7 @@ const routes: Routes = [
     ProductListComponent,
    Hrs24Pipe,
    M2cmPipe,
+   Dollar2lkrsPipe,
   ],
   imports: [
     BrowserModule,
@@ -96,7 +98,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     NgbPaginationModule
   ],
-  providers: [Hrs24Pipe],
+  providers: [Hrs24Pipe,Dollar2lkrsPipe,M2cmPipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
