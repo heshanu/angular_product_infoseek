@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 
 //import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
-=======
-import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
->>>>>>> develop
+//import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
+
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -26,6 +24,7 @@ import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 
 import { DeactivateGuard } from './shared/guards/deactivate.guard';
+import { PipesExsampleComponent } from './components/pipes-exsample/pipes-exsample.component';
 
 const routes: Routes = [
   // {
@@ -69,15 +68,7 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
-<<<<<<< HEAD
   }
-=======
-  },
-  {
-    path: 'pipeEx',
-    component: PipeExsamplesComponent,
-  },
->>>>>>> develop
 ];
 
 @NgModule({
@@ -89,6 +80,7 @@ const routes: Routes = [
     PostDetailComponent,
     PostsComponent,
     ProductListComponent,
+    PipesExsampleComponent,
   ],
   imports: [
     BrowserModule,
