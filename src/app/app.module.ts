@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 
 //import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
 //import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
 
+=======
+;
+import { Hrs24Pipe } from './shared/pipes/hrs24.pipe';
+import { PipeExsamplesComponent } from './components/pipe-exsamples/pipe-exsamples.component';
+>>>>>>> develop
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -24,7 +30,14 @@ import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 
 import { DeactivateGuard } from './shared/guards/deactivate.guard';
+<<<<<<< HEAD
 import { PipesExsampleComponent } from './components/pipes-exsample/pipes-exsample.component';
+=======
+//import { TimePipe } from './shared/pipes/time.pipe';
+import { M2cmPipe } from './shared/pipes/m2cm.pipe';
+import { Dollar2lkrsPipe } from './shared/pipes/dollar2lkrs.pipe';
+
+>>>>>>> develop
 
 const routes: Routes = [
   // {
@@ -83,16 +96,22 @@ const routes: Routes = [
     PostDetailComponent,
     PostsComponent,
     ProductListComponent,
+<<<<<<< HEAD
     PipesExsampleComponent,
+=======
+   Hrs24Pipe,
+   M2cmPipe,
+   Dollar2lkrsPipe,
+>>>>>>> develop
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    NgbPaginationModule,
+    NgbPaginationModule
   ],
-  providers: [],
+  providers: [Hrs24Pipe,Dollar2lkrsPipe,M2cmPipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
